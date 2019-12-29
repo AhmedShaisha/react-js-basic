@@ -27,8 +27,8 @@ class Home extends Component {
                 center      : true,
                 autoplay    : true,
                 autoplayTimeout : 2000,
-                animateOut      : 'fadeInUp',
-                animateIn       : 'fadeInDown',
+                // animateOut      : 'fadeInUp',
+                // animateIn       : 'fadeInDown',
                 smartSpeed      : 2000,
                 dragEndSpeed    : 2000,
                 pagination      : true,
@@ -128,17 +128,17 @@ class Home extends Component {
                     </Container>
                 </div>
 
-                <div className="pagintion">
-                    <ul>
-                        <li><FaAngleDoubleRight /></li>
-                        <li>1</li>
-                        <li>2</li>
-                        <li>3</li>
-                        <li>4</li>
-                        <li>5</li>
-                        <li><FaAngleDoubleLeft /></li>
-                    </ul>
-                </div>
+                {/*<div className="pagintion">*/}
+                {/*    <ul>*/}
+                {/*        <li><FaAngleDoubleRight /></li>*/}
+                {/*        <li>1</li>*/}
+                {/*        <li>2</li>*/}
+                {/*        <li>3</li>*/}
+                {/*        <li>4</li>*/}
+                {/*        <li>5</li>*/}
+                {/*        <li><FaAngleDoubleLeft /></li>*/}
+                {/*    </ul>*/}
+                {/*</div>*/}
 
             </div>
 

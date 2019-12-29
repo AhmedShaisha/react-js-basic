@@ -54,7 +54,7 @@ a, button, img{
 }
 
 a{
-  display: inline-block;
+  display: inline-block !important;
 }
 
 a, a:hover, a:focus {
@@ -63,11 +63,11 @@ a, a:hover, a:focus {
 }
 
 h1,h2,h3,h4,h5,h6,p{
-  margin: 10px 0;
+  margin: 10px 0 !important;
 }
 
 p{
-  line-height: 30px;
+  line-height: 30px !important;
 }
 
 button{
@@ -81,6 +81,7 @@ input{
   margin: 5px 0;
   font-size: 15px;
   transition: 0.5s;
+  border: 1px solid #DDD;
 }
 
 textarea{
@@ -91,6 +92,7 @@ textarea{
   font-size: 15px;
   resize: none;
   min-height: 150px;
+  border: 1px solid #DDD;
 }
 
 ::-webkit-input-placeholder {
@@ -178,9 +180,9 @@ label{
 }
 .Error_Text{
   text-align: center;
-  margin: 30px 0;
+  margin: 30px 0 !important;
   font-size: 20px;
-  color: #fff;
+  color: #f00;
 }
 .Nav_Bar{
   background-color: #363636;
@@ -189,6 +191,9 @@ label{
 }
 .Nav_Bar .row{
   align-items: center;
+}
+.nav-link {
+    width: 100%;
 }
 .Nav_Bar ul li a{
   padding: 25px;
@@ -244,7 +249,7 @@ label{
   background-color: rgba(154, 154, 154, 0.5);
   position: absolute;
   bottom: 0;
-  margin: 0;
+  margin: 0 !important;
   width: 100%;
   text-align: center;
   padding: 10px;
@@ -288,6 +293,7 @@ label{
   overflow: hidden;
   border-radius: 10px;
   border: 1px solid #DDD;
+  position: relative;
 }
 .slider_home:hover .owl-dots{
   transform: translateY(0px);
@@ -349,4 +355,156 @@ label{
   margin: 5px;
   border-radius: 5px;
   cursor: pointer;
+}
+.title h5 {
+    font-size: 16px;
+    color: #696969;
+    margin: 30px 0 !important;
+    margin-bottom: 5px !important;
+}
+.title span{
+    color: #b96363;
+}
+.call_us ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 5px 0;
+}
+
+.call_us ul li {
+    flex-basis: 33.3%;
+    text-align: center;
+    margin: 15px;
+}
+.call_us ul li a {
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(217,217,217,1);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(217,217,217,1);
+    box-shadow: 0px 0px 5px 0px rgba(217,217,217,1);
+    flex-basis: 100%;
+    padding: 15px;
+    border-radius: 10px;
+    display: block !important;
+    color: #8a8a8a;
+    font-size: 16px;
+}
+.call_us ul div{
+    display: none;
+}
+.call_us ul li a svg{
+    vertical-align: middle;
+    color: #363636;
+    margin: 0px 10px;
+    font-size: 25px;
+}
+.call_us ul li:nth-child(1) a svg{
+    color: darkblue;
+}
+.call_us ul li:nth-child(2) a svg{
+    color: green;
+}
+.call_us ul li:nth-child(3) a svg{
+    color: firebrick;
+}
+.infoDescription{
+    text-align: center;
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(217,217,217,1);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(217,217,217,1);
+    box-shadow: 0px 0px 5px 0px rgba(217,217,217,1);
+    padding: 15px;
+    border-radius: 10px;
+    margin: 40px 0;
+}
+.infoData {
+    position: absolute;
+    font-size: 15px;
+    z-index: 9;
+    top: 10px;
+    margin: 0px !important;
+    background-color: #f3943d;
+    padding: 10px 25px;
+    left: 10px;
+    border-radius: 5px;
+    color: #FFF;
+}
+.mapView {
+  width: 100%;
+  position: relative;
+  height: 400px;
+  overflow: hidden;
+  border-radius: 10px;
+  border: 10px solid #DDD;
+}
+.slider_result{
+  margin: 20px 0;
+  overflow: hidden;
+  border: 0;
+  height: auto;
+}
+.slider_result .owl-dots{
+  display: none;
+}
+.comments {
+  height: 300px;
+  overflow-y: auto;
+  margin: 40px auto;
+  border: 1px solid #DDD;
+  padding: 5px 0;
+  border-radius: 10px;
+  width: 90%;
+  position: relative;
+}
+.block_comment {
+  text-align: center;
+  border: 1px solid #DDD;
+  border-radius: 10px;
+  margin: 15px auto;
+  width: 90%;
+  padding: 10px 20px;
+}
+.block_comment .userInfo {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 15px;
+}
+.userInfo h4 {
+  font-size: 17px;
+  color: #a72e71;
+}
+.userInfo span {
+  color: #f3943d;
+  font-size: 12px;
+}
+.block_comment p {
+  margin: 20px 0 !important;
+  color: #636363;
+  margin-bottom: 10px !important;
+  text-align: right;
+}
+.modal{
+  display: block !important;
+}
+.addComment{
+  display: table !important;
+  margin: 30px auto;
+  width: 160px;
+}
+.modal .form_control {
+  width: 100%;
+  margin: auto;
+  background-color: transparent;
+  padding: 0;
+  border-radius: 10px;
+}
+.empty{
+  position: absolute;
+  margin: 0px auto !important;
+  transform: translateY(-50%);
+  top: 50%;
+  right: 0;
+  width: 100%;
+  text-align: center;
+  color: #dc3544;
 }
